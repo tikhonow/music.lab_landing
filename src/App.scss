@@ -1,0 +1,77 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8.125rem;
+  @media screen and (max-width: 1919px) {
+    gap: 3rem;
+  }
+
+  .musicLab_title {
+    display: flex;
+    flex-direction: column;
+    .title {
+      color: #000;
+      text-align: center;
+      font-family: Montserrat, serif;
+      font-size: 6rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      text-transform: uppercase;
+      padding-top: 2rem;
+      border-bottom: 2px solid black;
+      margin: 0;
+    }
+
+    .subtitle {
+      color: #000;
+      text-align: center;
+      font-family: Montserrat, serif;
+      font-size: 2.5rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: lowercase;
+      margin: 0;
+    }
+  }
+  button.forumButton {
+    width: 44.875rem;
+    height: 10.438rem;
+    border-radius: 29px;
+    background: linear-gradient(180deg, #AFAFAF 0%, #858585 100%);
+    box-shadow: 0 4px 25px 0 rgba(255, 255, 255, 0.25);
+    &:hover {
+      background: linear-gradient(180deg, #383737 0%, #858585 100%);
+      box-shadow: 0 4px 25px 0 rgba(255, 255, 255, 0.25);
+    }
+    text-transform: uppercase;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat, serif;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    span {
+      color: #000;
+      font-family: Montserrat, serif;
+      font-size: 2.25rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'SONGER SemiExpanded';
+  src: local('SONGER SemiExpanded'), local('SONGERSemiExpanded'), url('./assets/fonts/Songersemiexpanded.woff2') format('woff2'), url('./assets/fonts/Songersemiexpanded.woff') format('woff'), url('./assets/fonts/Songersemiexpanded.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

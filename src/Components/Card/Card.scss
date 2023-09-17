@@ -1,0 +1,41 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
+  width: 15.556rem;
+  height: 26.722rem;
+  justify-content: flex-end;
+  transition: transform .2s ease-in;
+  .liner {
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding-top: 1rem;
+    gap: 0.4rem;
+    text-transform: uppercase;
+    .title {
+      color: #000;
+      text-align: center;
+      font-family: Montserrat, serif;
+      font-size: 2.25rem;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+      border: none;
+      margin: 0;
+    }
+
+    .description {
+      color: #000;
+      text-align: center;
+      font-family: SONGER SemiExpanded, serif;
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-bottom: 1rem;
+    }
+  }
+}

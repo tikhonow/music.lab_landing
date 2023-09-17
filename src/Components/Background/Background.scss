@@ -1,0 +1,27 @@
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  background-image: url('/Темный.png');
+  background-repeat: no-repeat;
+  background-size: 90vw;
+  width: 100vw;
+  height: 100vh;
+  //transform: rotate(-132.569deg);
+  //border-radius: 2014.371px;
+  //background: linear-gradient(white, white) padding-box, linear-gradient(264deg, #1B1A1A -2.56%, #4D4D4D 50.75%, #2F2525 108.69%) border-box;
+  //border: 10em solid transparent;
+}
+
+@media screen and (max-width: 1919px) {
+  .background {
+    background-size: 70vw;
+  }
+}
+
+@media screen and (max-width: 1679px) {
+  .background {
+    background-size: 80vw;
+  }
+}
