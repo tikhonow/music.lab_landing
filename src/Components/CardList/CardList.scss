@@ -3,3 +3,16 @@
   flex-direction: row;
   gap: 1.188rem;
 }
+
+@media screen and (max-width: 1279px) {
+  .cardList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardList {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -66,7 +66,7 @@ function App() {
     <>
       <Background />
       <div className='main'>
-        <div className='musicLab_title'>
+        <div className='header'>
           <h1 className='title'>music.lab</h1>
           <h2 className='subtitle'>а как будешь звучать ты?</h2>
         </div>

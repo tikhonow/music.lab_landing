@@ -16,12 +16,18 @@
 
 @media screen and (max-width: 1919px) {
   .background {
-    background-size: 70vw;
+    background-size: 85.3vw;
   }
 }
 
 @media screen and (max-width: 1679px) {
   .background {
-    background-size: 80vw;
+    background-size: 95vw;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .background {
+    display: none;
   }
 }
