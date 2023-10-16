@@ -16,25 +16,26 @@ export interface CardProps {
 export const Card: FC<CardProps> = (cardProps) => {
 
     const onMouseOver = (event: React.MouseEvent<HTMLDivElement>) => {
-        const cardEl: HTMLDivElement = event.currentTarget
-        const liner: HTMLDivElement = cardEl.children[0]
+        const cardEl: HTMLDivElement = event.currentTarget;
+        const liner = cardEl.children[0] as HTMLDivElement; // Type casting here
 
         if (cardProps.backgroundButtonImage) {
-            liner.style.background = `url(${cardProps.backgroundButtonImage})`
+            liner.style.background = `url(${cardProps.backgroundButtonImage})`;
         } else {
-            liner.style.background = `${cardProps.linearGradient}`
-            liner.style.boxShadow = `${cardProps.boxShadow}`
+            liner.style.background = `${cardProps.linearGradient}`;
+            liner.style.boxShadow = `${cardProps.boxShadow}`;
         }
-        cardEl.style.transform = `translate3d(0, -1rem, 0)`
-    }
-    const onMouseOut = (event: React.MouseEvent<HTMLDivElement>) => {
-        const cardEl: HTMLDivElement = event.currentTarget
-        const liner: HTMLDivElement = cardEl.children[0]
+        cardEl.style.transform = `translate3d(0, -1rem, 0)`;
+    };
 
-        liner.style.background = `${cardProps.backgroundColor}`
-        liner.style.boxShadow = `none`
-        cardEl.style.transform = `none`
-    }
+    const onMouseOut = (event: React.MouseEvent<HTMLDivElement>) => {
+        const cardEl: HTMLDivElement = event.currentTarget;
+        const liner = cardEl.children[0] as HTMLDivElement; // Type casting here
+
+        liner.style.background = `${cardProps.backgroundColor}`;
+        liner.style.boxShadow = `none`;
+        cardEl.style.transform = `none`;
+    };
 
     return (
         <div onMouseOver={onMouseOver} onMouseOut={onMouseOut} className='card' style={{
@@ -47,6 +48,5 @@ export const Card: FC<CardProps> = (cardProps) => {
                 <div className='description' style={{color: `${cardProps.textColor}`}}>{cardProps?.description}</div>
             </div>
         </div>
-    )
-
-}
+        );
+};
